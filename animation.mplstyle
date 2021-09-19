@@ -1,0 +1,27 @@
+
+# This file contains user-defined style options for the animation plot.
+
+# Font options:
+#
+font.family         : serif
+font.serif          : Times
+font.sans-serif     : Computer Modern Sans serif
+font.monospace      : Computer Modern Typewriter
+font.size           : 11
+
+# Latex rendering
+#
+text.usetex         : true
+
+# Title and axes:
+#
+axes.titlelocation  : center
+axes.autolimit_mode : data
+
+# Resolution options:
+#
+savefig.dpi         : 200
+
+# Colourmap settings:
+#
+image.cmap          : rainbow               # gray, jet, cool, etc...
