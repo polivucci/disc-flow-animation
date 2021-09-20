@@ -129,9 +129,10 @@ def plot_loop(i: int, x: np.ndarray, z: np.ndarray, *args):
 
     # Labels and style:
     plt.style.use(['grayscale', './animation.mplstyle'])
-    plt.title('$t = %4.2f$' % (i*0.0025), 
-        horizontalalignment='left',
-        verticalalignment='bottom')
+    # plt.title('$t^+ = %i$' % (int(i*0.0025/0.13)), 
+    #     horizontalalignment='left',
+    #     verticalalignment='center',
+    #     pad=10)
     plt.xlabel('$x^+$')
     plt.ylabel('$z^+$')
 
@@ -165,7 +166,7 @@ if __name__=="__main__":
 
     # Define frames and frame rate:
     # frames = np.arange(100,38700,100)
-    frames = np.arange(100,20000,100)
+    frames = np.arange(100,35000,100)
     fps = 30
 
     export = 'mp4' # choose export video format (mp4, gif, html)

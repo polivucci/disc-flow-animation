@@ -9,7 +9,8 @@ A collection of two-dimensional snapshots of the shear-stress field at the wall 
 The [Matplotlib](https://www.matplotlib.org) library is then used to render the flow field snapshots into animation frames and export the resulting video to file.
 
 The video below is an example of the output, obtained using a larger range of flow snapshots from than those included in `flow_snapshots`:
-[![Example output](https://img.youtube.com/vi/ZFlttvHCTQs/0.jpg)](https://www.youtube.com/watch?v=ZFlttvHCTQs)
+
+[![Example output](https://img.youtube.com/vi/B1s0IZxBQSo/0.jpg)](https://www.youtube.com/watch?v=B1s0IZxBQSo)
 
 More complete information on the flow physics and the numerical methods can be found in:
 
