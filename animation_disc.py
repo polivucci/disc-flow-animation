@@ -152,9 +152,9 @@ if __name__=="__main__":
     ### Plot configuration:
     
     # Input files:
-    data_dir = '/home/paolo/shef-phd/dns/sharc/freely_tests/freely_D2/raw-data/'
+    data_dir = '/home/paolo/shef-phd/dns/sharc/freely_tests/freely_D2/raw-data/'#'./flow_snapshots/'
     field_data= data_dir+'dudy/dudy%s.dat'
-    time_data = data_dir+'disc_000001.dat'
+    time_data = data_dir+'disc_time_series.dat'
 
     # Load time history file:
     theta_deg = 180.0*np.loadtxt(time_data,usecols=(4,))/np.pi
@@ -165,14 +165,14 @@ if __name__=="__main__":
 
     # Define frames and frame rate:
     # frames = np.arange(100,38700,100)
-    frames = np.arange(100,5000,100)
+    frames = np.arange(100,20000,100)
     fps = 30
 
     export = 'mp4' # choose export video format (mp4, gif, html)
 
     # Instantiate plotting environment:
-    fig = plt.figure(figsize=(8,4.5))
-
+    plt.style.use(['./animation.mplstyle'])
+    fig = plt.figure()
 
     ### Set up animation loop:
     animation = FuncAnimation(fig, 

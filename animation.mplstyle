@@ -20,8 +20,9 @@ axes.autolimit_mode : data
 
 # Resolution options:
 #
-savefig.dpi         : 200
+figure.figsize      : 8, 4.5    # figure size in inches
+figure.dpi          : 200       # figure dots per inch
 
 # Colourmap settings:
 #
-image.cmap          : rainbow               # gray, jet, cool, etc...
+image.cmap          : rainbow   # gray, jet, cool, etc...
